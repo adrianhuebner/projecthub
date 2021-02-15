@@ -6,6 +6,9 @@ This is the front end appliction for a project manager application
 
 ## **Author:** Adrian Huebner [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrianhuebner/)
 
+**Repository for BackEnd application:** [Repo](https://github.com/adrianhuebner/ProjectManagmentBackEnd)
+**Link for Deployed BackEnd:** ***Check back for this later***
+
 ## Setup on Your Machine
 
 ## How to Run
