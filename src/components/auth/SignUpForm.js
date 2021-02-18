@@ -32,6 +32,15 @@ function SignUpForm() {
             placeholder="Create a password"
           />
         </div>
+        <div className="form-input">
+          <label htmlFor="password"> Confirm Password </label>
+            <input 
+              type="password"
+              name="re-enter password"
+              placeholder="Confirm password"
+            />
+        </div>
+        <button className="form-submit">Create Account</button>
       </form>
     </div>
   )
