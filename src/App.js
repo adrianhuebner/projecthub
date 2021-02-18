@@ -1,8 +1,9 @@
+import Form from './components/auth/Form.js';
 
 function App() {
   return (
     <div>
-      Welcome to ProjectHub
+      <Form />
     </div>
   );
 }
