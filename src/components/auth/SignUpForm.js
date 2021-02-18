@@ -9,13 +9,28 @@ function SignUpForm() {
         <h1>Create an account with us to help you keep track of all your projects!</h1>
         <h2>Please fill out the form below to your account created!</h2>
         <div className="form-input">
-          <label htmlFor="username">
+          <label htmlFor="username"> Username </label>
             <input
               type="text"
               name="username"
               placeholder="Enter your username here"
             />
-          </label>
+        </div>
+        <div className="form-input">
+          <label htmlFor="email"> Email </label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email here"
+            />
+        </div>
+        <div className="form-input">
+        <label htmlFor="password"> Password </label>
+          <input 
+            type="password"
+            name="password"
+            placeholder="Create a password"
+          />
         </div>
       </form>
     </div>
