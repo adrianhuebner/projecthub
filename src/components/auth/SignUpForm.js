@@ -40,7 +40,7 @@ function SignUpForm() {
               placeholder="Confirm password"
             />
         </div>
-        <button className="form-submit">Create Account</button>
+        <button className="form-submit" type="submit">Create Account</button>
       </form>
     </div>
   )
