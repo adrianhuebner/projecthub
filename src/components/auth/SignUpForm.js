@@ -2,25 +2,27 @@
 
 import React from 'react';
 import useForm from './useForm';
+import validation from './validateUserInput';
 
 function SignUpForm() {
 
-  const {handleChanges, formValues} = useForm();
+  const {handleChanges, handleSubmit, formValues, errors} = useForm(validation);
 
   return (
     <div className="form-content">
-      <form className="form">
+      <form onSubmit={handleSubmit} className="form">
         <h1>Create an account with us to help you keep track of all your projects!</h1>
         <h2>Please fill out the form below to your account created!</h2>
         <div className="form-input">
-          <label htmlFor="username"> Username </label>
+          <label htmlFor="username"> Username </label>  
             <input
               type="text"
               name="username"
               placeholder="Enter your username here"
               value={formValues.username}
-              onChange={handleChanges}
+              onChange={handleChanges}  
             />
+            {errors.username && <p> {errors.username} </p>}
         </div>
         <div className="form-input">
           <label htmlFor="email"> Email </label>

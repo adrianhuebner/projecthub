@@ -36,4 +36,6 @@ export default function validateFormErrors(formValues){
   else if(formValues.secondpassword !== formValues.password){
     errors.secondpassword = "Passwords do not match"
   }
+
+  return errors;
 }
