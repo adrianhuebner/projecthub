@@ -33,4 +33,5 @@ This is the front end appliction for a project manager application
 
 ## Sources
 
-[React Form Tutorial](https://www.youtube.com/watch?v=KGFG-yQD7Dw&t=1029s)
+[React Form Tutorial](https://www.youtube.com/watch?v=KGFG-yQD7Dw&t=1029s)  
+[Regex for Email](https://regexlib.com/Search.aspx?k=email&AspxAutoDetectCookieSupport=1)
