@@ -1,8 +1,12 @@
 'use strict';
 
-import React from 'react'
+import React from 'react';
+import useForm from './useForm';
 
 function SignUpForm() {
+
+  const {handleChanges, formValues} = useForm();
+
   return (
     <div className="form-content">
       <form className="form">
@@ -14,6 +18,8 @@ function SignUpForm() {
               type="text"
               name="username"
               placeholder="Enter your username here"
+              value={formValues.username}
+              onChange={handleChanges}
             />
         </div>
         <div className="form-input">
@@ -22,6 +28,8 @@ function SignUpForm() {
               type="text"
               name="email"
               placeholder="Enter your email here"
+              value={formValues.email}
+              onChange={handleChanges}
             />
         </div>
         <div className="form-input">
@@ -30,6 +38,8 @@ function SignUpForm() {
             type="password"
             name="password"
             placeholder="Create a password"
+            value={formValues.password}
+            onChange={handleChanges}
           />
         </div>
         <div className="form-input">
@@ -38,6 +48,8 @@ function SignUpForm() {
               type="password"
               name="re-enter password"
               placeholder="Confirm password"
+              value={formValues.secondpassword}
+              onChange={handleChanges}
             />
         </div>
         <button className="form-submit" type="submit">Create Account</button>

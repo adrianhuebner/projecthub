@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 
 const useForm = () => {
   const [formValues, setFormValues] = useState({
-    email: '',
     username: '',
+    email: '',
     password: '',
-    reenteredpassword: ''
+    secondpassword: ''
   });
 
   const [errors, setErrors] = useState({});
@@ -18,7 +18,11 @@ const useForm = () => {
     })
   }
 
-  return { handleChanges }
+  const handleSubmit = event => {
+    event.preventDefault();
+  }
+
+  return { handleChanges, formValues, handleSubmit }
 }
 
 export default useForm;
